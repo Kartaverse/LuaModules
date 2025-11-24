@@ -1,10 +1,10 @@
 # Media Lua Modules
 
-This project is still in an alpha development stage. The source code is provided so you can customize the lua module FFI bindings for your specific and exact needs.
-
 ## Overview
 
 A collection of Lua Modules that allow LuaJIT work with common audio, video, 3D, and networking libraries.
+
+This project is still in an alpha development stage. The source code is provided so you can customize the lua module FFI bindings for your specific and exact needs.
 
 ## Libraries
 
