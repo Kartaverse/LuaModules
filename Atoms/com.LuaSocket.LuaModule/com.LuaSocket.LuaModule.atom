@@ -7,6 +7,7 @@ Atom {
 	Description = [[<h1>LuaSocket Lua Module</h1>
 <p>Access the LuaSocket nentwork library from LuaJIT.</p>]],
 	Deploy = {
+		"Docs/Kartaverse/FFI/LuaSocket.md",
 		"Modules/socket.lua",
 		"Scripts/Comp/FFI/Socket ICMP Demo.lua",
 		"Scripts/Comp/FFI/Socket TCP Demo.lua",

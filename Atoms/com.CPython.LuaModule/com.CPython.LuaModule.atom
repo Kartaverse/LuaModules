@@ -7,6 +7,7 @@ Atom {
 	Description = [[<h1>CPython 3.11 Lua Module</h1>
 <p>Access the CPython embedded Python scripting library from LuaJIT.</p>]],
 	Deploy = {
+		"Docs/Kartaverse/FFI/CPython.md",
 		"Modules/Lua/cpython.lua",
 		"Scripts/Comp/FFI/CPython Demo.lua",
 
