@@ -21,7 +21,7 @@ Pre-compiled .so shared library files are provided for macOS ARM64 users.
 
 ## License
 
-The Lua Module FFI wrappers are provided under an MIT open-source software license to aign with Lua's license terms. If required you can use the FFI wrappers under an LGPL license, too.
+The Lua Module FFI wrappers are provided under an MIT open-source software license to align with Lua's license terms. If required by your project, you can use these FFI wrappers under an LGPL license, too.
 
 ## Installation
 
