@@ -8,12 +8,12 @@ This project is still in an alpha development stage. The source code is provided
 
 ## Libraries
 
-- CPython
-- cURL
+- [CPython](Atoms/com.CPython.LuaModule/Docs/Kartaverse/FFI/CPython.md)
+- [cURL](Atoms/com.cURL.LuaModule/Docs/Kartaverse/FFI/cURL.md)
 - FFmpeg LibAV
-- LuaSocket
-- STB Image
-- zlib
+- [LuaSocket](Atoms/com.LuaSocket.LuaModule/Docs/Kartaverse/FFI/LuaSocket.md)
+- [STB Image](Atoms/com.stb.Image.LuaModule/Docs/Kartaverse/FFI/stb%20image.md)
+- [zlib](Atoms/com.zlib.LuaModule/Docs/Kartaverse/FFI/zlib.md)
 
 ## Shared Libraries
 

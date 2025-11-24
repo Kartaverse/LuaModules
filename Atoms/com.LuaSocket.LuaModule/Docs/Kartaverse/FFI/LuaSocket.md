@@ -6,9 +6,9 @@ This project provides a self-contained LuaSocket module compiled for LuaJIT on m
 
 *   `socket.lua`: The main Lua module. It automatically loads the sibling `socket.so`.
 *   `socket.so`: The compiled LuaSocket C core library (macOS shared object).
-*   `TCP Demo.lua`: Example script demonstrating a TCP HTTP GET request.
-*   `UDP Demo.lua`: Example script demonstrating a UDP NTP time query.
-*   `ICMP Demo.lua`: Example script demonstrating a raw socket ICMP Ping (requires root/sudo).
+*   `Socket TCP Demo.lua`: Example script demonstrating a TCP HTTP GET request.
+*   `Socket UDP Demo.lua`: Example script demonstrating a UDP NTP time query.
+*   `Socket ICMP Demo.lua`: Example script demonstrating a raw socket ICMP Ping (requires root/sudo).
 
 ## Prerequisites
 
