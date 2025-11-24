@@ -8,7 +8,7 @@ Atom {
 <p>Access the STB Image single template header library from LuaJIT.</p>]],
 	Deploy = {
 		"Modules/Lua/stb_image.lua",
-		"Scripts/Comp/STB Image Demo.lua",
+		"Scripts/Comp/FFI/STB Image Demo.lua",
 
 		Mac = {
 			"Modules/Lua/stb_image.so",

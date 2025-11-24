@@ -8,7 +8,7 @@ Atom {
 <p>Access the CPython embedded Python scripting library from LuaJIT.</p>]],
 	Deploy = {
 		"Modules/Lua/cpython.lua",
-		"Scripts/Comp/CPython Demo.lua",
+		"Scripts/Comp/FFI/CPython Demo.lua",
 
 		Mac = {
 			"Modules/Lua/cpython.so",

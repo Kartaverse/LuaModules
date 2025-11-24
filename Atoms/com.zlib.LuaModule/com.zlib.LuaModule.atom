@@ -8,8 +8,8 @@ Atom {
 <p>Access the zlib compression library from LuaJIT.</p>]],
 	Deploy = {
 		"Modules/Lua/zlib.lua",
-		"Scripts/Comp/GZIP Compression Demo.lua",
-		"Scripts/Comp/ZIP Compression Demo.lua",
+		"Scripts/Comp/FFI/GZIP Compression Demo.lua",
+		"Scripts/Comp/FFI/ZIP Compression Demo.lua",
 
 		Mac = {
 			"Modules/Lua/zlib.so",

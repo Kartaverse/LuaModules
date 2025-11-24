@@ -8,7 +8,7 @@ Atom {
 <p>Access the cURL nentwork library from LuaJIT.</p>]],
 	Deploy = {
 		"Modules/Lua/curl.lua",
-		"Scripts/Comp/cURL Network Demo.lua",
+		"Scripts/Comp/FFI/cURL Network Demo.lua",
 
 		Mac = {
 			"Modules/Lua/curl.so",

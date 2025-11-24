@@ -8,9 +8,9 @@ Atom {
 <p>Access the LuaSocket nentwork library from LuaJIT.</p>]],
 	Deploy = {
 		"Modules/socket.lua",
-		"Scripts/Comp/Socket ICMP Demo.lua",
-		"Scripts/Comp/Socket TCP Demo.lua",
-		"Scripts/Comp/Socket UDP Demo.lua",
+		"Scripts/Comp/FFI/Socket ICMP Demo.lua",
+		"Scripts/Comp/FFI/Socket TCP Demo.lua",
+		"Scripts/Comp/FFI/Socket UDP Demo.lua",
 
 		Mac = {
 			"Modules/Lua/socket.so",

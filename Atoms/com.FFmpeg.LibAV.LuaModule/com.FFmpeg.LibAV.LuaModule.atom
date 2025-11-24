@@ -2,19 +2,14 @@ Atom {
 	Name = "FFmpeg LibAV Lua Module",
 	Category = "Modules/Lua",
 	Author = "FFmpeg",
-	Version = 8.0,
+	Version = 8,
 	Date = {2025, 11, 24},
 	Description = [[<h1>FFmpeg LibAV Lua Module</h1>
 <p>Access the FFmpeg LibAV video and audio library from LuaJIT.</p>
 <p>DaVinci Resolve ships with a pre-compiled copy of the FFmpeg LibAV framework we can link to as a shared library.</p>
 ]],
 	Deploy = {
-		"Modules/Lua/zlib.lua",
-		"Scripts/Comp/GZIP Compression Demo.lua",
-		"Scripts/Comp/ZIP Compression Demo.lua",
-
-		Mac = {
-			"Modules/Lua/zlib.so",
-		},
+		"Modules/Lua/libav.lua",
+		"Scripts/Comp/FFI/Video Probe Demo.lua",
 	},
 }
