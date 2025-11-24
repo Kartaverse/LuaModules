@@ -1,0 +1,17 @@
+Atom {
+	Name = "cURL Lua Module",
+	Category = "Modules/Lua",
+	Author = "cURL",
+	Version = 1,
+	Date = {2025, 11, 24},
+	Description = [[<h1>cURL Lua Module</h1>
+<p>Access the cURL nentwork library from LuaJIT.</p>]],
+	Deploy = {
+		"Modules/Lua/curl.lua",
+		"Scripts/Comp/cURL Network Demo.lua",
+
+		Mac = {
+			"Modules/Lua/curl.so",
+		},
+	},
+}

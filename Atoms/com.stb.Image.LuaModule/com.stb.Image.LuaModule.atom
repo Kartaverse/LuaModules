@@ -1,0 +1,17 @@
+Atom {
+	Name = "STB Image Lua Module",
+	Category = "Modules/Lua",
+	Author = "STB",
+	Version = 1.16,
+	Date = {2025, 11, 24},
+	Description = [[<h1>STB Image Lua Module</h1>
+<p>Access the STB Image single template header library from LuaJIT.</p>]],
+	Deploy = {
+		"Modules/Lua/stb_image.lua",
+		"Scripts/Comp/STB Image Demo.lua",
+
+		Mac = {
+			"Modules/Lua/stb_image.so",
+		},
+	},
+}

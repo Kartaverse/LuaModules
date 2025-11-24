@@ -1,0 +1,18 @@
+Atom {
+	Name = "zlib Lua Module",
+	Category = "Modules/Lua",
+	Author = "zlib",
+	Version = 1.31,
+	Date = {2025, 11, 24},
+	Description = [[<h1>zlib Lua Module</h1>
+<p>Access the zlib compression library from LuaJIT.</p>]],
+	Deploy = {
+		"Modules/Lua/zlib.lua",
+		"Scripts/Comp/GZIP Compression Demo.lua",
+		"Scripts/Comp/ZIP Compression Demo.lua",
+
+		Mac = {
+			"Modules/Lua/zlib.so",
+		},
+	},
+}

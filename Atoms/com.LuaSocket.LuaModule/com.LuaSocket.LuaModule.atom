@@ -1,0 +1,19 @@
+Atom {
+	Name = "LuaSocket Lua Module",
+	Category = "Modules/Lua",
+	Author = "LuaSocket",
+	Version = 3.1,
+	Date = {2025, 11, 24},
+	Description = [[<h1>LuaSocket Lua Module</h1>
+<p>Access the LuaSocket nentwork library from LuaJIT.</p>]],
+	Deploy = {
+		"Modules/curl.lua",
+		"Scripts/Comp/Socket ICMP Demo.lua",
+		"Scripts/Comp/Socket TCP Demo.lua",
+		"Scripts/Comp/Socket UDP Demo.lua",
+
+		Mac = {
+			"Modules/Lua/curl.so",
+		},
+	},
+}
