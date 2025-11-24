@@ -25,6 +25,4 @@ The Lua Module FFI wrappers are provided under an MIT open-source software licen
 
 ## Installation
 
-The Lua Module files are provided as Reactor atom packages. Thish helps to simplify the installation process for BMD Resolve Studio and Fusion Studio usage.
-
-The target audience for the Lua Modules are fuse and Lua comp script develpers who create custom data nodes in Fusion.
+The Lua Module files are provided as Reactor atom packages. This helps to simplify the installation process for BMD Resolve Studio and Fusion Studio usage. The target audience for the Lua Modules are fuse and Lua comp script develpers who create custom data nodes in Fusion.
