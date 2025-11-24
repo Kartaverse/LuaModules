@@ -14,6 +14,9 @@ This project provides a self-contained LuaSocket module compiled for LuaJIT on m
 
 *   **LuaJIT**: Ensure you have LuaJIT installed.
     *   `brew install luajit` (on macOS via Homebrew)
+    *   `brew install openssl@3` (on macOS via Homebrew)
+    *   `brew install libpsl` (on macOS via Homebrew)
+    *   `brew install libssh2` (on macOS via Homebrew)
 
 ## Installation
 
