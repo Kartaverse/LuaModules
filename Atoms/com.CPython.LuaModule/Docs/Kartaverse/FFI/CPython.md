@@ -65,14 +65,14 @@ This project provides a Lua module that uses LuaJIT FFI to access an embedded CP
 To run the example script, execute the following command in your terminal:
 
 ```bash
-luajit "Py Demo.lua"
+luajit "CPython Demo.lua"
 ```
 
 ## Files
 
 *   `cpython.lua`: The Lua module definition.
 *   `cpython.so`: The compiled CPython shared library.
-*   `Py Demo.lua`: An example script demonstrating usage.
+*   `CPython Demo.lua`: An example script demonstrating usage.
 
 ## Distribution
 
@@ -83,19 +83,12 @@ To distribute this module or move it to another location, you need to copy the f
 3.  The Python Standard Library (`Lib` folder from the `cpython` source).
 4.  The compiled Python modules (located in `cpython/build/lib.macosx-...`).
 
-You should organize them such that `cpython.lua` can find `cpython.so`, and the Python initialization code (like in `Py Demo.lua`) can point `Py_SetPath` to the `Lib` folder and the compiled modules folder.
+You should organize them such that `cpython.lua` can find `cpython.so`, and the Python initialization code (like in `CPython Demo.lua`) can point `Py_SetPath` to the `Lib` folder and the compiled modules folder.
 
 ## Troubleshooting
 
 *   **Import Errors**: If Python cannot find standard modules, you may need to set `PYTHONHOME` or ensure the `Lib` directory from the CPython source is accessible.
 *   **Architecture Mismatch**: Ensure both LuaJIT and the compiled `cpython.so` are built for the same architecture (e.g., arm64 on Apple Silicon).
-
-## Shell Env Vars
-
-```bash
-export PYTHONHOME="/Library/Frameworks/Python.framework/Versions/3.11"
-export PYTHONPATH="/Library/Frameworks/Python.framework/Versions/3.11"
-```
 
 Sample Output:
 
