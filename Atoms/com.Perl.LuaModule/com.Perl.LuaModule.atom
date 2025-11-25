@@ -1,0 +1,18 @@
+Atom {
+	Name = "Perl Lua Module",
+	Category = "Modules/Lua",
+	Author = "zlib",
+	Version = 5.8,
+	Date = {2025, 11, 24},
+	Description = [[<h1>Perl Lua Module</h1>
+<p>Access the Perl embedded scripting library from LuaJIT.</p>]],
+	Deploy = {
+		"Docs/Kartaverse/FFI/Perl.md",
+		"Modules/Lua/perl.lua",
+		"Scripts/Comp/FFI/Perl Demo.lua",
+
+		Mac = {
+			"Modules/Lua/perl_ffi.so",
+		},
+	},
+}

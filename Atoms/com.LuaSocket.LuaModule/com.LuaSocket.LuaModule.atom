@@ -8,7 +8,7 @@ Atom {
 <p>Access the LuaSocket nentwork library from LuaJIT.</p>]],
 	Deploy = {
 		"Docs/Kartaverse/FFI/LuaSocket.md",
-		"Modules/socket.lua",
+		"Modules/Lua/socket.lua",
 		"Scripts/Comp/FFI/Socket ICMP Demo.lua",
 		"Scripts/Comp/FFI/Socket TCP Demo.lua",
 		"Scripts/Comp/FFI/Socket UDP Demo.lua",

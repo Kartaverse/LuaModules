@@ -12,12 +12,15 @@ This project is still in an alpha development stage. The source code is provided
 - [cURL](Atoms/com.cURL.LuaModule/Docs/Kartaverse/FFI/cURL.md)
 - FFmpeg LibAV
 - [LuaSocket](Atoms/com.LuaSocket.LuaModule/Docs/Kartaverse/FFI/LuaSocket.md)
+- [Perl](Atoms/com.Perl.LuaModule/Docs/Kartaverse/FFI/Perl.md)
 - [STB Image](Atoms/com.stb.Image.LuaModule/Docs/Kartaverse/FFI/stb%20image.md)
 - [zlib](Atoms/com.zlib.LuaModule/Docs/Kartaverse/FFI/zlib.md)
 
 ## Shared Libraries
 
 Pre-compiled .so shared library files are provided for macOS ARM64 users.
+
+You might have to edit the "ffi.load()" filepath code for the .lua files to correctly detect the .so shared library in the same Lua Modules folder hierarchy.
 
 ## License
 
