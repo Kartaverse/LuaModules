@@ -15,6 +15,10 @@ local function print_table(t, indent)
 end
 
 local function Probe(filepath)
+
+    print("Video Probe Demo")
+    print("--------------------")
+
     print("Opening video: " .. tostring(filepath))
     local video, err = LibAV.open(filepath)
 
@@ -50,6 +54,9 @@ local function Probe(filepath)
 
     video:close()
     print("\nClosed video.")
+    
+    print("--------------------")
+    print("Demo Completed")
 end
 
 local filename = comp:MapPath("Reactor:/Deploy/Comps/Kartaverse/WarpStitch/WarpStitch Under the Bridge/Media/CameraA.mp4")
