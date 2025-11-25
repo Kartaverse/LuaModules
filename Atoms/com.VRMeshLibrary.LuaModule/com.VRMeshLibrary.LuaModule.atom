@@ -1,0 +1,26 @@
+Atom {
+	Name = "VR Mesh Library Lua Module",
+	Category = "Modules/Lua",
+	Author = "zlib",
+	Version = 1,
+	Date = {2025, 11, 25},
+	Description = [[<h1>VR Mesh Library Lua Module</h1>
+<p>Access the SGO VR Mesh Library from LuaJIT.</p>
+<h2>For more information</h2>
+<ul>
+	<li>https://www.sgo.es/mesh/</li>
+	<li>https://github.com/SGODeveloper/VRMeshLibrary</li>
+	<li>https://www.youtube.com/watch?v=guOORbXwdyk</li>
+</ul>
+]],
+	Deploy = {
+		"Comps/Kartaverse/FFI/VRMeshLibrary/MVI_0398.vrmesh",
+		"Docs/Kartaverse/FFI/VRMeshLibrary.md",
+		"Modules/Lua/vrmesh.lua",
+		"Scripts/Comp/FFI/VR Mesh Demo.lua",
+
+		Mac = {
+			"Modules/Lua/vrmesh_ffi.so",
+		},
+	},
+}

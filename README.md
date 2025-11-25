@@ -15,6 +15,7 @@ This project is still in an alpha development stage. The source code is provided
 - [LuaSocket](Atoms/com.LuaSocket.LuaModule/Docs/Kartaverse/FFI/LuaSocket.md)
 - [Perl](Atoms/com.Perl.LuaModule/Docs/Kartaverse/FFI/Perl.md)
 - [STB Image](Atoms/com.stb.Image.LuaModule/Docs/Kartaverse/FFI/stb%20image.md)
+- [VR Mesh Library](Atoms/com.VRMeshLibrary.LuaModule/Docs/Kartaverse/FFI/VRMeshLibrary.md)
 - [zlib](Atoms/com.zlib.LuaModule/Docs/Kartaverse/FFI/zlib.md)
 
 ## Shared Libraries
