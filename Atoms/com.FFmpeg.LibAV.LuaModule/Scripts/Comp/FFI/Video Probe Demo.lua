@@ -52,4 +52,5 @@ local function Probe(filepath)
     print("\nClosed video.")
 end
 
-Probe("/Users/vfx/Reactor/Deploy/Comps/Kartaverse/WarpStitch/WarpStitch Under the Bridge/Media/CameraA.mp4")
+local filename = comp:MapPath("Reactor:/Deploy/Comps/Kartaverse/WarpStitch/WarpStitch Under the Bridge/Media/CameraA.mp4")
+Probe(filename)

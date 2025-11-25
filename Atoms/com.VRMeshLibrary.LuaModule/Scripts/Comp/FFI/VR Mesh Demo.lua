@@ -7,7 +7,7 @@ print("--------------------")
 local meshFile = vrmesh.new()
 
 -- Open the file for reading
-local filename = "MVI_0398.vrmesh"
+local filename = comp:MapPath("Reactor:/Deploy/Comps/Kartaverse/FFI/VRMeshLibrary/MVI_0398.vrmesh")
 local res = meshFile:openRead(filename, vrmesh.FLAG_GENERATEMISSINGINDEX)
 
 if res ~= vrmesh.NOERROR then
