@@ -1,0 +1,13 @@
+Atom {
+	Name = "Base91 Lua Module",
+	Category = "Modules/Lua",
+	Author = "Base91",
+	Version = 1,
+	Date = {2025, 11, 24},
+	Description = [[<h1>Base91 Lua Module</h1>
+<p>Encode and decode Base91 data from LuaJIT.</p>]],
+	Deploy = {
+		"Modules/Lua/base91.lua",
+		"Scripts/Comp/FFI/Base91 Demo.lua",
+	},
+}
