@@ -33,3 +33,9 @@ To build the shared library from source:
 
 ```bash
 gcc -O2 -bundle -undefined dynamic_lookup -I/opt/homebrew/include/luajit-2.1 -o lpeg_ffi.so lpeg-src/*.c
+```
+
+## Notes
+
+- The build command assumes you have LuaJIT installed in `/opt/homebrew/include/luajit-2.1`. Adjust the path if your LuaJIT installation is in a different location.
+- This build is specifically for macOS. For other platforms, you may need to adjust the build flags.
