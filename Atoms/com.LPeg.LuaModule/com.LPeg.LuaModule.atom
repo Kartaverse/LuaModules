@@ -1,0 +1,23 @@
+Atom {
+	Name = "LPeg Lua Module",
+	Category = "Modules/Lua",
+	Author = "LPeg",
+	Version = 1.1,
+	Date = {2025, 11, 25},
+	Description = [[<h1>LPeg Lua Module</h1>
+<p>Access the LPeg pattern-matching library from LuaJIT.</p>
+<h2>For more information</h2>
+<ul>
+	<li>https://www.inf.puc-rio.br/~roberto/lpeg/</li>
+</ul>
+]],
+	Deploy = {
+		"Docs/Kartaverse/FFI/LPeg.md",
+		"Modules/Lua/lpeg.lua",
+		"Scripts/Comp/FFI/LPeg Demo.lua",
+
+		Mac = {
+			"Modules/Lua/lpeg_ffi.so",
+		},
+	},
+}

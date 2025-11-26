@@ -5,7 +5,12 @@ Atom {
 	Version = 1,
 	Date = {2025, 11, 24},
 	Description = [[<h1>Base91 Lua Module</h1>
-<p>Encode and decode Base91 data from LuaJIT.</p>]],
+<p>Encode and decode Base91 data from LuaJIT.</p>
+<h2>For more information</h2>
+<ul>
+	<li>https://sph.mn/computer/guides/base91.html</li>
+</ul>
+]],
 	Deploy = {
 		"Modules/Lua/base91.lua",
 		"Scripts/Comp/FFI/Base91 Demo.lua",

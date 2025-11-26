@@ -5,7 +5,12 @@ Atom {
 	Version = 1.31,
 	Date = {2025, 11, 24},
 	Description = [[<h1>zlib Lua Module</h1>
-<p>Access the zlib compression library from LuaJIT.</p>]],
+<p>Access the zlib compression library from LuaJIT.</p>
+<h2>For more information</h2>
+<ul>
+	<li>https://www.zlib.net/</li>
+</ul>
+]],
 	Deploy = {
 		"Docs/Kartaverse/FFI/zlib.md",
 		"Modules/Lua/zlib.lua",

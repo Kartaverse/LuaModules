@@ -5,7 +5,13 @@ Atom {
 	Version = 1,
 	Date = {2025, 11, 24},
 	Description = [[<h1>cURL Lua Module</h1>
-<p>Access the cURL nentwork library from LuaJIT.</p>]],
+<p>Access the cURL network library from LuaJIT.</p>
+<h2>For more information</h2>
+<ul>
+	<li>https://curl.se/libcurl/</li>
+	<li>https://curl.se/libcurl/c/</li>
+</ul>
+]],
 	Deploy = {
 		"Docs/Kartaverse/FFI/cURL.md",
 		"Modules/Lua/curl.lua",

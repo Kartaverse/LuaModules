@@ -5,7 +5,13 @@ Atom {
 	Version = 3.11,
 	Date = {2025, 11, 24},
 	Description = [[<h1>CPython 3.11 Lua Module</h1>
-<p>Access the CPython embedded Python scripting library from LuaJIT.</p>]],
+<p>Access the CPython embedded Python scripting library from LuaJIT.</p>
+<h2>For more information</h2>
+<ul>
+	<li>https://docs.python.org/3/extending/embedding.html</li>
+	<li>https://github.com/python/cpython/blob/main/Doc/extending/embedding.rst</li>
+</ul>
+]],
 	Deploy = {
 		"Docs/Kartaverse/FFI/CPython.md",
 		"Modules/Lua/cpython.lua",
