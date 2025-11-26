@@ -12,8 +12,9 @@ This project is still in an alpha development stage. The source code is provided
 - [CPython](Atoms/com.CPython.LuaModule/Docs/Kartaverse/FFI/CPython.md)
 - [cURL](Atoms/com.cURL.LuaModule/Docs/Kartaverse/FFI/cURL.md)
 - FFmpeg LibAV
-- [LuaSocket](Atoms/com.LuaSocket.LuaModule/Docs/Kartaverse/FFI/LuaSocket.md)
+- [gRPC](Atoms/com.gRPC.LuaModule/Docs/Kartaverse/FFI/gRPC.md)
 - [LPeg](Atoms/com.LPeg.LuaModule/Docs/Kartaverse/FFI/LPeg.md)
+- [LuaSocket](Atoms/com.LuaSocket.LuaModule/Docs/Kartaverse/FFI/LuaSocket.md)
 - [Perl](Atoms/com.Perl.LuaModule/Docs/Kartaverse/FFI/Perl.md)
 - [STB Image](Atoms/com.stb.Image.LuaModule/Docs/Kartaverse/FFI/stb%20image.md)
 - [VR Mesh Library](Atoms/com.VRMeshLibrary.LuaModule/Docs/Kartaverse/FFI/VRMeshLibrary.md)
