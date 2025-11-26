@@ -1,6 +1,9 @@
 local ffi = require("ffi")
 local curl = require("curl")
 
+print("cURL Network Demo")
+print("------------------------------------------------------------------------------------")
+
 -- Helper to check for errors
 local function check(code)
     if code ~= curl.CURLE_OK then
@@ -28,10 +31,10 @@ end
 -- Cast the callback to a C function pointer
 local write_cb = ffi.cast("size_t (*)(char*, size_t, size_t, void*)", write_callback)
 
-print("cURL Version: " .. ffi.string(curl.curl_version()))
+print("Version: " .. ffi.string(curl.curl_version()))
 
 -- 1. Simple GET Request
-print("\n--- Performing GET Request ---")
+print("\nPerforming GET Request")
 local easy = curl.curl_easy_init()
 if easy ~= nil then
     check(curl.curl_easy_setopt(easy, curl.CURLOPT_URL, "https://httpbin.org/get"))
@@ -54,7 +57,7 @@ else
 end
 
 -- 2. POST Request with Headers
-print("\n\n--- Performing POST Request ---")
+print("\n\nPerforming POST Request")
 easy = curl.curl_easy_init()
 if easy ~= nil then
     local url = "https://httpbin.org/post"
@@ -82,4 +85,6 @@ else
     print("Failed to init curl")
 end
 
-print("\n\n--- Done ---")
+print("\n\n------------------------------------------------------------------------------------")
+print("Done")
+

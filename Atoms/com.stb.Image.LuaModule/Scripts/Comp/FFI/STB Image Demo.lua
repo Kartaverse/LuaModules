@@ -2,6 +2,7 @@ local stb = require("stb_image")
 local ffi = require("ffi")
 
 print("STB Image Demo")
+print("--------------------")
 
 -- Create a simple image in memory (Red, Green, Blue, White) 2x2
 local width = 2
@@ -29,7 +30,10 @@ image_data[9] = 255
 image_data[10] = 255
 image_data[11] = 255
 
-local filename = "test_image.png"
+local filename = comp:MapPath("Temp:/FFI/test_image.png")
+if not bmd.direxists("Temp:/FFI/") then
+	bmd.createdir(comp:MapPath("Temp:/FFI/"))
+end
 local stride = width * channels
 
 print("Writing test image to " .. filename)

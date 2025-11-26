@@ -6,6 +6,11 @@ package.path = package.path .. ";./?.lua"
 
 local socket = require("socket")
 
+print("Socket TCP Demo")
+print("---------------------------------------------------------------------")
+print("Demonstrates a simple HTTP GET request using the custom socket module")
+print("---------------------------------------------------------------------")
+
 local host = "www.json.org"
 local port = 80
 local file = "/example.html"
@@ -35,7 +40,7 @@ end
 
 c:close()
 
-print("---------------------------------------------------")
+print("---------------------------------------------------------------------")
 print(response)
-print("---------------------------------------------------")
+print("---------------------------------------------------------------------")
 print("Connection closed.")

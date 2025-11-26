@@ -6,6 +6,11 @@ package.path = package.path .. ";./?.lua"
 
 local socket = require("socket")
 
+print("Socket UDP Demo")
+print("-------------------------------------------------")
+print("Demonstrates a simple UDP time server query (NTP)")
+print("-------------------------------------------------")
+
 local host = "time.google.com"
 local port = 123 -- NTP port
 

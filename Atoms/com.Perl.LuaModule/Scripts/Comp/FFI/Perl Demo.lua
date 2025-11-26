@@ -1,11 +1,13 @@
 local perl = require("perl")
 
+print("Perl Demo")
+print("----------------------------------------------")
 print("Creating Perl interpreter...")
 local p, err = perl.new()
 
 if not p then
-    print("Error creating interpreter: " .. err)
-    os.exit(1)
+	print("Error creating interpreter: " .. err)
+	os.exit(1)
 end
 
 print("Perl interpreter created successfully.")
@@ -15,8 +17,9 @@ local args = {"perl", "-e", "print 'Hello from Perl!\\n'"}
 local result, err = p:run(args)
 
 if result ~= 0 then
-    print("Error running Perl code: " .. (err or "unknown error"))
-    os.exit(1)
+	print("Error running Perl code: " .. (err or "unknown error"))
+	os.exit(1)
 end
 
 print("Perl code executed successfully.")
+print("----------------------------------------------")

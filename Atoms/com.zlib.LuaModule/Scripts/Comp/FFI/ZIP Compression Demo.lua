@@ -4,6 +4,8 @@ package.path = current_dir .. "?.lua;" .. package.path
 
 local zlib = require("zlib")
 
+print("ZIP Compression Demo")
+print("------------------------------------------------------------------------------------")
 print("Zlib Version: " .. zlib.version())
 
 local original_text = "This is a test string for raw Deflate compression. " .. string.rep("Repeating content to ensure compression works well. ", 5)
@@ -39,6 +41,7 @@ else
     print("FAILURE: Text mismatch!")
 end
 
+
 print("\n--- Zlib Wrapper Test (Default) ---")
 -- Standard zlib wrapper (windowBits = 15)
 local zlib_compressed, err = zlib.deflate(original_text)
@@ -53,3 +56,5 @@ if zlib_compressed then
 else
     print("Zlib compression failed: " .. err)
 end
+
+print("------------------------------------------------------------------------------------")

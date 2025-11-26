@@ -1,6 +1,7 @@
 local lpeg = require("lpeg")
 
-print("LPeg version:", lpeg.version)
+print("LPeg Pattern-Matching Library")
+print("------------------------------")
 
 local match = lpeg.match
 local P = lpeg.P
@@ -36,3 +37,4 @@ assert(res[3] == "56")
 print("Test 4 Passed: Table Capture")
 
 print("All tests passed successfully!")
+print("------------------------------")

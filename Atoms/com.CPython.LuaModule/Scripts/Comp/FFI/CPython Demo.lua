@@ -4,6 +4,12 @@ package.path = package.path .. ";./?.lua"
 local cpython = require("cpython")
 local ffi = require("ffi")
 
+print("CPython Demo")
+print("----------------------------------------------")
+
+print("Clearing Environment Variables:")
+print("PYTHONPATH")
+print("PYTHONHOME")
 -- Unset PYTHONPATH to avoid conflicts with system Python
 ffi.cdef[[
     int unsetenv(const char *name);
@@ -11,7 +17,7 @@ ffi.cdef[[
 ffi.C.unsetenv("PYTHONPATH")
 ffi.C.unsetenv("PYTHONHOME")
 
-print("Initializing Python...")
+print("\nInitializing Python...")
 -- Set PYTHONPATH to include Lib and the build directory for compiled modules
 local script_path = debug.getinfo(1, "S").source:sub(2):match("(.*/)") or "./"
 local lib_path = script_path .. "cpython/Lib"
@@ -28,7 +34,7 @@ wchar_path[#full_path] = 0
 cpython.Py_SetPath(wchar_path)
 cpython.Py_Initialize()
 
-print("Python Version:")
+print("\nPython Version:")
 local version = ffi.string(cpython.Py_GetVersion())
 print(version)
 
@@ -42,4 +48,5 @@ cpython.PyRun_SimpleString(code)
 
 print("\nFinalizing Python...")
 cpython.Py_Finalize()
-print("Done.")
+print("\n\n------------------------------------------------------------------------------------")
+print("Done")

@@ -7,6 +7,12 @@ package.path = package.path .. ";./?.lua"
 
 local socket = require("socket")
 
+print("Socket ICMP Demo")
+print("----------------------------------------------")
+print("Demonstrates a simple ICMP Echo Request (Ping)")
+print("----------------------------------------------")
+
+
 -- Simple checksum function
 local function checksum(data)
     local sum = 0

@@ -4,17 +4,23 @@ package.path = current_dir .. "?.lua;" .. package.path
 
 local zlib = require("zlib")
 
+print("GZIP Compression Demo")
+print("------------------------------------------------------------------------------------")
 print("Zlib Version: " .. zlib.version())
 
 -- Test Data
 local original_text = "Hello, this is a test string for GZIP compression! " .. string.rep("Repeat this. ", 10)
-local filename = "test_output.gz"
+
+local filename = comp:MapPath("Temp:/FFI/test_output.gz")
+if not bmd.direxists("Temp:/FFI/") then
+	bmd.createdir(comp:MapPath("Temp:/FFI/"))
+end
 
 print("\n--- GZIP File Test ---")
 print("Original Text Length: " .. #original_text)
 
 -- Write GZIP file
-print("Writing to " .. filename .. "...")
+print("Writing to " .. tostring(filename))
 local success, err = zlib.gz_write_file(filename, original_text)
 if not success then
     print("Error writing file: " .. err)
@@ -23,7 +29,7 @@ end
 print("Write successful.")
 
 -- Read GZIP file
-print("Reading from " .. filename .. "...")
+print("Reading from " .. tostring(filename))
 local decompressed_text, err = zlib.gz_read_file(filename)
 if not decompressed_text then
     print("Error reading file: " .. err)
@@ -63,3 +69,5 @@ else
         end
     end
 end
+
+print("------------------------------------------------------------------------------------")
